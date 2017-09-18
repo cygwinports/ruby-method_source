@@ -1,0 +1,14 @@
+inherit rubygem
+
+NAME="ruby-method_source"
+VERSION=0.8.2
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby method source retrieval module"
+DESCRIPTION="Ruby module to retrieve the sourcecode for a method."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_method_source_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_method_source_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
